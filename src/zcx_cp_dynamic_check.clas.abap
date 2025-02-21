@@ -167,10 +167,10 @@ class zcx_cp_dynamic_check implementation.
   method if_xco_message~place_string.
 
     ro_message = _xco_message->place_string( iv_string = iv_string
-                                             iv_msgv1  = abap_false
-                                             iv_msgv2  = abap_false
-                                             iv_msgv3  = abap_false
-                                             iv_msgv4  = abap_false ).
+                                             iv_msgv1 = abap_false
+                                             iv_msgv2 = abap_false
+                                             iv_msgv3 = abap_false
+                                             iv_msgv4 = abap_false ).
 
   endmethod.
   method if_xco_message~write_to_t100_dyn_msg.

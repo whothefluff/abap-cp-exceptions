@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_CP_EXCEPTION_READER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Exception Reader</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>5</UNICODE>
+    <WITH_UNIT_TESTS>X</WITH_UNIT_TESTS>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CHAIN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Aggregate of an exception and its causes</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a reader with the filled exception as 1st chain row</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DEEPEST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the entry with the most depth of this object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DEPTH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the max depth of this object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIRST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the first entry of this object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HAS_CAUSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns true when this has an actual chain of exceptions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LAST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the last entry of this object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REVERSED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Creates a new reader with the opposite order to this object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SHALLOWEST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the entry with the least depth of this object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SIZE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the number of levels of this object</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>DEEPEST</CMPNAME>
+     <SCONAME>R_VAL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>&lt;em&gt;1&lt;/em&gt; for uncaused exceptions. &lt;em&gt;lines&lt;/em&gt; otherwise</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HAS_CAUSE</CMPNAME>
+     <SCONAME>R_VAL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>True for caused exceptions. False otherwise</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SIZE</CMPNAME>
+     <SCONAME>R_VAL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>&lt;em&gt;1&lt;/em&gt; for uncaused exceptions. &lt;em&gt;lines&lt;/em&gt; otherwise</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
